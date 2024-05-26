@@ -1,0 +1,107 @@
+/* Google Font Added */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Reuse CSS */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  transition: 0.5s;
+}
+
+/* Menu Style */
+.header_area {
+  border-top: 3px solid #4272d7;
+  min-height: 120px;
+}
+.logo {
+  float: left;
+}
+.icon {
+  float: right;
+  margin-top: 50px;
+  margin-left: 25px;
+  padding-left: 25px;
+  position: relative;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  background: #ccc;
+  width: 2px;
+  height: 15px;
+  left: 0;
+  top: 3px;
+}
+.main_menu {
+  float: right;
+}
+/* .main_menu ul {
+} */
+.main_menu ul li {
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+  top: 100%;
+  left: 0;
+}
+.main_menu ul li a {
+  color: #666666;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 50px 0;
+  display: block;
+}
+.main_menu ul li:hover > a {
+  color: #4272d7;
+}
+
+/* Sub Menu Style */
+.main_menu ul li ul.sub_menu {
+  position: absolute;
+  background: #171a21;
+  top: 110%;
+  width: 260px;
+  border-top: 3px solid #4272d7;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.main_menu ul li:hover ul.sub_menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.main_menu ul li ul.sub_menu li {
+  margin: 0;
+  display: block;
+  border-bottom: 1px solid #1e2128;
+}
+.main_menu ul li ul.sub_menu li a {
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 13px;
+}
+.main_menu ul li ul.sub_menu li a:hover {
+  background: #4272d7;
+  padding-left: 30px;
+}
